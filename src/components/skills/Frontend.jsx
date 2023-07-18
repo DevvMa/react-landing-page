@@ -17,19 +17,26 @@ const Frontend = () => {
                 <div className="skills__data">
                     <i className="bx bx-badge-check"></i>
                     <div>
-                        <h3 className="skills__name">CSS</h3>
+                        <h3 className="skills__name">Javascript</h3>
                         <span className="skills__level">Advance</span>
                     </div>
                 </div>
                 <div className="skills__data">
                     <i className="bx bx-badge-check"></i>
                     <div>
-                        <h3 className="skills__name">Javascript</h3>
-                        <span className="skills__level">Advance</span>
+                        <h3 className="skills__name">Sass</h3>
+                        <span className="skills__level">Intermediate</span>
                     </div>
                 </div>
             </div>
             <div className="skills__group">
+                <div className="skills__data">
+                    <i className="bx bx-badge-check"></i>
+                    <div>
+                        <h3 className="skills__name">CSS</h3>
+                        <span className="skills__level">Advance</span>
+                    </div>
+                </div>
                 <div className="skills__data">
                     <i className="bx bx-badge-check"></i>
                     <div>
@@ -40,15 +47,8 @@ const Frontend = () => {
                 <div className="skills__data">
                     <i className="bx bx-badge-check"></i>
                     <div>
-                        <h3 className="skills__name">Git</h3>
-                        <span className="skills__level">Intermediate</span>
-                    </div>
-                </div>
-                <div className="skills__data">
-                    <i className="bx bx-badge-check"></i>
-                    <div>
                         <h3 className="skills__name">React</h3>
-                        <span className="skills__level">Intermediate</span>
+                        <span className="skills__level">Beginner</span>
                     </div>
                 </div>
             </div>
