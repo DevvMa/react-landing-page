@@ -1,8 +1,16 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState} from 'react';
 import emailjs from '@emailjs/browser';
 import "./contact.css";
 
 const Contact = () => {
+    // const contactModal = document.querySelector(".contact__modal");
+    const contactModalTitle = document.querySelector(".contact__modal-title");
+    const contactModalDescription = document.querySelector(".contact__modal-description");
+    const [toggleState, setToggleState] = useState(0);
+    const toggleTab = (index) =>{
+        setToggleState(index);
+    }
+
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -13,7 +21,17 @@ const Contact = () => {
         'template_qqq630t', 
         form.current, 
         'cUNVVi_x9DtDnLGSr')
-      e.target.reset();
+        .then(() =>{
+            e.target.reset();   
+            // console.log(result.text);
+            contactModalTitle.textContent = "THANK YOU :)";
+            contactModalDescription.textContent = "I have received your project. I will respond as soon as possible";
+            toggleTab(1);
+        }, () => {
+            contactModalTitle.textContent = "PARDON ME :(";
+            contactModalDescription.textContent = "There is a technical issue. Please reach me at maulanadevva.fitrah@gmail.com";
+            toggleTab(1);
+        });
     };
   return (
     <section className="contact section" id="contact">
@@ -86,6 +104,16 @@ const Contact = () => {
                 </form>
             </div>
             
+        </div>
+
+        <div className={toggleState === 1? "contact__modal active-modal":"contact__modal"}>
+            <div className="contact__modal-content">
+                <i className="uil uil-times contact__modal-close" onClick={()=>toggleTab(0)}></i>
+                <h3 className="contact__modal-title">Thank You</h3>
+                <p className="contact__modal-description">
+                Your message has been sent successfully
+                </p>
+            </div>
         </div>
     </section>
   )

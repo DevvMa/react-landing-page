@@ -15,70 +15,27 @@ const Qualification = () => {
 
         <div className="qualification__container container">
             <div className="qualification__tabs">
-                <div className={
-                    toggleState === 1
+                <div className={toggleState === 1
                     ? "qualification__button qualification__active button--flex"
                     : "qualification__button button--flex"}
                     onClick={() => toggleTab(1)}
                     >
-                    <i className="uil uil-graduation-cap qualification__icon"></i>
-                    Education
+                    <i className="uil uil-briefcase-alt qualification__icon"></i>
+                    Experience
                 </div>
-                <div className={toggleState === 2
+                <div className={
+                    toggleState === 2
                     ? "qualification__button qualification__active button--flex"
                     : "qualification__button button--flex"}
                     onClick={() => toggleTab(2)}
                     >
-                    <i className="uil uil-briefcase-alt qualification__icon"></i>
-                    Experience
+                    <i className="uil uil-graduation-cap qualification__icon"></i>
+                    Education
                 </div>
             </div>
             <div className="qualification__sections">
                 <div className={
                     toggleState === 1
-                    ?"qualification__content qualification__content-active"
-                    :"qualification__content"
-                    }
-                >
-                    <div className="qualification__data">
-                        <div>
-                            <h3 className="qualification__title">Computer Engineer</h3>
-                            <span className="qualification__subtitle">
-                                INA - Institut Bisnis dan Informatika Stikom Surabaya
-                            </span>
-                            <div className="qualification__calendar">
-                                <i className="uil uil-calendar-alt"></i>
-                                2014 - 2018
-                            </div>
-                        </div>
-                        <div>
-                            <span className="qualification__rounder"></span>
-                            <span className="qualification__line"></span>
-                        </div>
-                    </div>
-                    <div className="qualification__data">
-                        <div></div>
-                        <div>
-                            <span className="qualification__rounder"></span>
-                            <span className="qualification__line"></span>
-                        </div>
-                        <div>
-                            <h3 className="qualification__title"> Software Engineer</h3>
-                            <span className="qualification__subtitle">
-                                Vocational High School Purwosari
-                            </span>
-                            <div className="qualification__calendar">
-                                <i className="uil uil-calendar-alt"></i>
-                                2011 - 2014
-                            </div>
-                        </div>
-                        
-                    </div>
-                   
-                </div>
-
-                <div className={
-                    toggleState === 2
                     ?"qualification__content qualification__content-active"
                     :"qualification__content"
                 }>
@@ -89,8 +46,7 @@ const Qualification = () => {
                                 PT. Sentra Vidya Utama
                             </span>
                             <div className="qualification__calendar">
-                                <i className="uil uil-calendar-alt"></i>
-                                2020 - 2023
+                                <i className="uil uil-calendar-alt"></i> 2020 - 2023
                             </div>
                         </div>
                         <div>
@@ -110,8 +66,7 @@ const Qualification = () => {
                                 Lia S. Associates
                             </span>
                             <div className="qualification__calendar">
-                                <i className="uil uil-calendar-alt"></i>
-                                2018 - 2020
+                                <i className="uil uil-calendar-alt"></i> 2018 - 2020
                             </div>
                         </div>
                         
@@ -123,8 +78,7 @@ const Qualification = () => {
                                 Day Studio - Self Employee
                             </span>
                             <div className="qualification__calendar">
-                                <i className="uil uil-calendar-alt"></i>
-                                2017 - current
+                                <i className="uil uil-calendar-alt"></i> 2017 - current
                             </div>
                         </div>
                         <div>
@@ -144,12 +98,48 @@ const Qualification = () => {
                                 PT. Pertamina Persero Mor V
                             </span>
                             <div className="qualification__calendar">
-                                <i className="uil uil-calendar-alt"></i>
-                                2016
+                                <i className="uil uil-calendar-alt"></i> 2016
                             </div>
                         </div>
+                    </div>  
+                </div>
+                <div className={
+                    toggleState === 2
+                    ?"qualification__content qualification__content-active"
+                    :"qualification__content"
+                    }
+                >
+                    <div className="qualification__data">
+                        <div>
+                            <h3 className="qualification__title">Computer Engineer</h3>
+                            <span className="qualification__subtitle">
+                                Institut Bisnis dan Informatika Stikom Surabaya
+                            </span>
+                            <div className="qualification__calendar">
+                                <i className="uil uil-calendar-alt"></i> 2014 - 2018
+                            </div>
+                        </div>
+                        <div>
+                            <span className="qualification__rounder"></span>
+                            <span className="qualification__line"></span>
+                        </div>
                     </div>
-                    
+                    <div className="qualification__data">
+                        <div></div>
+                        <div>
+                            <span className="qualification__rounder"></span>
+                            <span className="qualification__line"></span>
+                        </div>
+                        <div>
+                            <h3 className="qualification__title"> Software Engineer</h3>
+                            <span className="qualification__subtitle">
+                                Vocational High School Purwosari
+                            </span>
+                            <div className="qualification__calendar">
+                                <i className="uil uil-calendar-alt"></i> 2011 - 2014
+                            </div>
+                        </div>
+                    </div>  
                 </div>
             </div>
         </div>

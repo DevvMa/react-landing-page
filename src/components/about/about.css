@@ -44,6 +44,11 @@
     margin-bottom: var(--mb-2-5);
 }
 
+.about__link{
+    font-weight: var(--font-medium);
+    color: var(--title-color-dark);
+}
+
 /* BREAKPOINTS */
 /* For large devices */
 @media screen and (max-width:992px) {

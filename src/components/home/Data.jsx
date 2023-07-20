@@ -55,9 +55,9 @@ const Data = () => {
                 ></path>
           </svg>
       </h1>
-      <h3 className="home__subtitle">Programmer</h3>
+      <h3 className="home__subtitle">Web Programmer</h3>
       <p className="home__description">
-          Im commited programmer based in Indonesia, Im very passionate and dedicated to my work
+        Hi i&apos;m Devva. A Passionate full stack web developer. I build accessible and inclusive products for the web
       </p>
       <a href="#contact" className="button button--flex">
           Say Hello

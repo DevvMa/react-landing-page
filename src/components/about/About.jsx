@@ -14,10 +14,11 @@ const About = () => {
             <div className="about__data">
                 <Info/>
                 <p className="about__description">
-                Full Stack Developer, lifelong learners and 5+ years of experience in programming field with a high commitment level to 
-                solve every challenge to make a great impact
+                    Start in 2018 I’ve had the privilege of building mobile games and web for a start-up and a huge corporation at <a href="https://liasidik.com/" rel="noopener noreferrer" className="about__link" target="_blank">
+                    branding agency</a>.
+                    Fast forward today my main focus is maintain products, fix bugs, and giving technical advice for our clients at <a href="https://sevima.com/" rel="noopener noreferrer" className="about__link" target="_blank">SEVIMA</a> .
                 </p>
-
+               
                 <a download="" href={CV} className="button button--flex">
                     Download CV
                     <svg
