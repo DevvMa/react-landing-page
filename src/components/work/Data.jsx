@@ -3,8 +3,32 @@ import Work2 from "../../assets/tinified/work2.png";
 import Work3 from "../../assets/tinified/work3.png";
 import Work4 from "../../assets/tinified/work4.png";
 import Work5 from "../../assets/tinified/work5.png";
+import Work6 from "../../assets/tinified/work6.png";
+import Work7 from "../../assets/tinified/work7.png";
+import Work8 from "../../assets/tinified/work8.png";
 
 export const projectsData = [
+    {
+        id: 8,
+        image: Work8,
+        title: "iShowU",
+        category: "elementor",
+        link:"https://daystudio.id/ishowu/",
+    },
+    {
+        id: 7,
+        image: Work7,
+        title: "Pasti Laris",
+        category: "elementor",
+        link:"https://daystudio.id/pastilaris/",
+    },
+    {
+        id: 6,
+        image: Work6,
+        title: "HYFASHION",
+        category: "framer",
+        link:"https://hyfashion.framer.website/",
+    },
     {
     id: 1,
         image: Work1,
@@ -39,7 +63,8 @@ export const projectsData = [
         title: "Kafe Koran",
         category: "games",
         link:"#",
-    },
+    }
+    
 ];
   
 
@@ -52,5 +77,11 @@ export const porjectsNav = [
     },
     {
         name:'games',
+    },
+    {
+        name:'elementor'
+    },
+    {
+        name:'framer',
     },
 ]
